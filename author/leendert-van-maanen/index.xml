@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leendert van Maanen | Bias Barometer</title>
+    <link>/author/leendert-van-maanen/</link>
+      <atom:link href="/author/leendert-van-maanen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Leendert van Maanen</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/images/logo_hu34ba489d39da8c50ba221e9840defbf8_121441_300x300_fit_lanczos_2.png</url>
+      <title>Leendert van Maanen</title>
+      <link>/author/leendert-van-maanen/</link>
+    </image>
+    
+  </channel>
+</rss>

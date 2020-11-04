@@ -1,0 +1,18 @@
+{
+  "name": "Bias Barometer",
+  "short_name": "Bias Barometer",
+  "lang": "en-us",
+  "theme_color": "#BC0031",
+  "background_color": "#BC0031",
+  "icons": [{
+    "src": "/images/icon_hu302242ffa37e5047080d26883f0ebcd8_208421_192x192_fill_lanczos_center_2.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/images/icon_hu302242ffa37e5047080d26883f0ebcd8_208421_512x512_fill_lanczos_center_2.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}
