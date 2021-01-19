@@ -3,11 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/authors/</loc>
+    <loc>/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/seminars_posts/judgement-of-social-groups/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/open-access/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/seminars/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/seminars_posts/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
   </url>
   
   <url>
@@ -43,7 +69,7 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/seminars/</loc>
   </url>
   
   <url>
