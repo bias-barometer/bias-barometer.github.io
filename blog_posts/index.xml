@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bias Barometer</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <description>Bias Barometer</description>
+    <title>Blog_posts | Bias Barometer</title>
+    <link>/blog_posts/</link>
+      <atom:link href="/blog_posts/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blog_posts</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/logo_hu284f5771a1ea0c89898faa204948e4a1_285145_300x300_fit_lanczos_2.png</url>
-      <title>Bias Barometer</title>
-      <link>/</link>
+      <title>Blog_posts</title>
+      <link>/blog_posts/</link>
     </image>
     
     <item>
-      <title>How do I know if my language model is gender-biased?</title>
-      <link>/blogs_posts/gender-bias-in-language-models/</link>
+      <title>How do I know whether my language model is gender-biased?</title>
+      <link>/blog_posts/gender-bias-in-language-models/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>/blogs_posts/gender-bias-in-language-models/</guid>
+      <guid>/blog_posts/gender-bias-in-language-models/</guid>
       <description>&lt;p&gt;The language model (LM) is an essential building block of current AI systems dealing with natural language, and has proven to be useful in tasks as diverse as sentiment analysis, text generation, translations, and summarizing. These LMs are typically based on deep neural networks and trained on vast amounts of training data, which makes these so effective, but this doesn&amp;rsquo;t come without any problems.&lt;/p&gt;
 &lt;p&gt;LMs have been shown to learn undesirable biases towards certain
 social groups, which may unfairly influence the decisions, recommendations or texts
@@ -36,7 +36,7 @@ However, the black-box nature of deep neural networks and the fact that these ar
 &lt;h2 id=&#34;downstream-bias&#34;&gt;Downstream bias&lt;/h2&gt;
 &lt;p&gt;Most work on the bias of LMs is focused on the output. Any bias in the predictions, recommendations, and texts generated in the downstream task has the potential to actually harm people by unfair behaviour &lt;a href=&#34;https://aclanthology.org/2020.acl-main.485/&#34; title=&#34;S.L. Blodgett et al. Language (technology) is power: A critical survey of \&amp;#34;bias\&amp;#34; in nlp. 2020.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[17]&lt;/a&gt;. This bias is typically tested by &lt;em&gt;challenge sets&lt;/em&gt;: carefully constructed sets of sentences used to probe the model for any specific biases.&lt;/p&gt;
 &lt;p&gt;One example of a challenge set is the &lt;em&gt;semantic textual similarity task for bias&lt;/em&gt; (&lt;strong&gt;STS-B&lt;/strong&gt;) &lt;a href=&#34;https://arxiv.org/abs/2010.06032&#34; title=&#34;K. Webster et al. Measuring and Reducing Gendered Correlations in Pre-Trained Models. 2020.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[18]&lt;/a&gt;. In this task, the LM is used for estimating the similarity of three sentences, containing either the word &amp;ldquo;man&amp;rdquo;, &amp;ldquo;woman&amp;rdquo;, or an occupation term. Then the gender bias for that occupation term is the difference in the similarity averaged over a set of template sentences. Below you see an example for finding the gender bias for &amp;ldquo;janitor&amp;rdquo; using one template sentence, where the final score is 0.75 - 0.54 = 0.21 (male bias).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/blog/STS-B.png&#34; alt=&#34;STS-B.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/blog/STS-B_resized.png&#34; alt=&#34;STS-B.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;embedding-bias&#34;&gt;Embedding bias&lt;/h2&gt;
 &lt;p&gt;We have seen some examples of measuring gender bias in the training data of an LM and at its output in a downstream task. Something that is not studied as much, is the gender bias in the internal states of an LM. Because of the black-box nature of deep neural networks this is notoriously difficult.&lt;/p&gt;
 &lt;p&gt;However, there is one layer in a typical LM that is actually very suitable for measuring bias: the input embeddings. The input embeddings are the first layer of the LM and encode word (parts) into word vectors, which can be used in the other layers. The input embeddings actually have a similar representation to &lt;em&gt;static word embeddings&lt;/em&gt;, for which researchers have actually developed many techniques to measure gender bias. One class of bias measures relies on finding a linear &lt;strong&gt;gender subspace&lt;/strong&gt;. Let us explain one of these methods from Ravfogel et al. &lt;a href=&#34;https://aclanthology.org/2020.acl-main.647/&#34; title=&#34;S. Ravfogel et al. “Null It Out: Guarding Protected Attributes by Iterative Nullspace Projection”. 2020.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[19]&lt;/a&gt;.&lt;/p&gt;
@@ -81,55 +81,6 @@ However, the black-box nature of deep neural networks and the fact that these ar
 &lt;p&gt;In this blog post, we wanted to give some examples of how you can measure the gender bias of a language model. We showed some methods for three different representations in the language modelling pipeline. While it is difficult to measure the gender bias in the internal states of LMs, because of their &amp;ldquo;black box&amp;rdquo; nature, it is actually possible to use existing bias measures on one of the layers: &lt;em&gt;the input embeddings&lt;/em&gt;, for which we also give some examples.&lt;/p&gt;
 &lt;p&gt;However, it is important to keep in mind that the research on how to measure bias in LMs is ongoing. Moreover, we also still need more research on how the different bias measures relate to each other to form a good understanding of the underlying mechanisms of bias and the validity of these measures.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Judgements of Social Groups</title>
-      <link>/seminars_posts/judgement-of-social-groups/</link>
-      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>/seminars_posts/judgement-of-social-groups/</guid>
-      <description>&lt;div class=&#34;alert alert-&#34;&gt;
-  &lt;div&gt;
-    Please contact us at: &lt;strong&gt;s.a.m.hogenboom [at] uva.nl&lt;/strong&gt; for a zoom-link to join the seminar.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Date:&lt;/strong&gt; 26th of January, 2021&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Time:&lt;/strong&gt; 14:00 - 15:00 (Amsterdam, UTC + 01:00)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A stereotype is a generalization about a class of people but does not necessarily represent every individual within the group (McCauley, Stitt, &amp;amp; Segal, 1980). Category information (i.e., stereotype information) is often used to make probabilistic predictions about people within a particular group. For instance, a probabilistic judgement about Germans would be that, “Germans are more likely than other people to be efficient.” Here we are making a prediction about an individual’s personality (i.e., efficiency) based on their group membership (i.e., German). McCauley and Stitt (1978) suggest that people are acctualy Bayesian in their judgements and tend to make probabilistic judgements about people’s personality based on stereotype information. The current project aims to replicate the original McCauley and Stitt (1978) work to test whether stereotype prediction from category information to personality adheres to Bayes’ rule.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Literature&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;McCauley, C., &amp;amp; Stitt, C. L. (1978). An individual and quantitative measure of stereotypes. Journal of Personality and Social Psychology, 36(9), 929. &lt;a href=&#34;https://www.researchgate.net/profile/Clark-Mccauley/publication/232438516_An_individual_and_quantitive_measure_of_stereotypes/links/56fefef508aee995dde73c26/An-individual-and-quantitive-measure-of-stereotypes.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>/blogs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/blogs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact Page</title>
-      <link>/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seminars</title>
-      <link>/seminars/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/seminars/</guid>
-      <description></description>
     </item>
     
   </channel>

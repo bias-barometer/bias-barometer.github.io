@@ -1,0 +1,1016 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.0 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="26th of January, 2021 - 14:00 - 15:00 (Amsterdam, UTC &#43; 01:00)">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog_posts/gender-bias-in-language-models/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#BC0031">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro&family=Tinos&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu302242ffa37e5047080d26883f0ebcd8_208421_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu302242ffa37e5047080d26883f0ebcd8_208421_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/blog_posts/gender-bias-in-language-models/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Bias Barometer">
+  <meta property="og:url" content="/blog_posts/gender-bias-in-language-models/">
+  <meta property="og:title" content="How do I know whether my language model is gender-biased? | Bias Barometer">
+  <meta property="og:description" content="26th of January, 2021 - 14:00 - 15:00 (Amsterdam, UTC &#43; 01:00)"><meta property="og:image" content="/images/logo_hu284f5771a1ea0c89898faa204948e4a1_285145_300x300_fit_lanczos_2.png">
+  <meta property="twitter:image" content="/images/logo_hu284f5771a1ea0c89898faa204948e4a1_285145_300x300_fit_lanczos_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2022-02-02T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2022-02-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#BC0031",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#BC0031"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>How do I know whether my language model is gender-biased? | Bias Barometer</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu284f5771a1ea0c89898faa204948e4a1_285145_0x70_resize_lanczos_2.png" alt="Bias Barometer"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu284f5771a1ea0c89898faa204948e4a1_285145_0x70_resize_lanczos_2.png" alt="Bias Barometer"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#introduction"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/contact/"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/seminars/"><span>Seminars</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>How do I know whether my language model is gender-biased?</h1>
+
+  
+  <p class="page-subtitle">Some examples of bias measures for language models.</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    02 - Feb - 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>The language model (LM) is an essential building block of current AI systems dealing with natural language, and has proven to be useful in tasks as diverse as sentiment analysis, text generation, translations, and summarizing. These LMs are typically based on deep neural networks and trained on vast amounts of training data, which makes these so effective, but this doesn&rsquo;t come without any problems.</p>
+<p>LMs have been shown to learn undesirable biases towards certain
+social groups, which may unfairly influence the decisions, recommendations or texts
+that AI systems building on those LMs generate.
+However, the black-box nature of deep neural networks and the fact that these are trained on very large datasets makes it difficult to understand how LMs are biased. Nevertheless, researchers have proposed many different techniques to study the biases that are present in current natural language technologies.</p>
+<p><strong>In this blog post, we will give some examples of techniques we use in our lab to measure one well-studied type of bias, gender bias, in the different representations of language models.</strong></p>
+<h2 id="what-are-language-models">What are language models?</h2>
+<p>A language model (LM) is a statistical model to predict the next likely word given a sequence of other words. The most successful ones are based on deep neural networks. There exist many different types of networks (e.g. LSTM, Transformer), but all rely on encoding words or word parts as vector representations and passing these through the &ldquo;hidden layers&rdquo; of the network resulting in &ldquo;contextual embeddings&rdquo; (called such because contextual information is represented in the vectors, such as information on the neighbouring words). Typically, LMs have billions of parameters that are trained on huge datasets, which makes these so effective but also very complex systems.</p>
+<p>While we have a lot of examples showing that LMs exhibit undesirable gender biases, it remains challenging to measure gender bias in these models. In this post, we will focus on three stages in a typical LM pipeline, as highlighted in the figure below, and give examples of how you can measure gender bias in these different representations.</p>
+<p><img src="/blog/c685cc03a9e1997cf52e804659c48055.png" alt="c685cc03a9e1997cf52e804659c48055.png"></p>
+<p>First, we discuss how gender bias can be measured in the training dataset of a model (I) and at the end of the pipeline in a downstream task that makes use of the contextual embeddings of the model (III). We then give an example of how to study gender bias in the internal state of the LM, by studying the input embeddings (IE), wich make up the first layer of the LM (II). However, before we discuss these methods, we give a brief explanation of what we mean by gender bias.</p>
+<h2 id="gender-bias-of-occupation-terms">Gender bias of occupation terms</h2>
+<p>Defining (undesirable) bias is a complicated matter, and there are many definitions and frameworks discussed in the literature [e.g. <a href="https://aclanthology.org/P19-1159.pdf" title="T. Sun et al. “Mitigating Gender Bias in Natural Language Processing: Literature Review”. 2019." target="_blank" rel="noopener">1</a>, <a href="https://aclanthology.org/2020.acl-main.468/" title="D. Shah et al. “Predictive Biases in Natural Language Processing Models: A Conceptual Framework and Overview”. 2020." target="_blank" rel="noopener">2</a>, <a href="https://aclanthology.org/2020.acl-main.485/" title="S. L. Blodgett et al. “Language (Technology) is Power: A Critical Survey of ”Bias” in NLP”. 2020." target="_blank" rel="noopener">3</a>]. In this post, we use <em>gender-neutrality</em> as the norm, and define bias as any significant deviation from a 50-50% distribution in preferences, probabilities or similarities.</p>
+<p>Inspired by previous work [<a href="https://www.science.org/doi/abs/10.1126/science.aal4230" title="A. Caliskan et al. “Semantics derived automatically from language corpora contain human-like biases”. 2017." target="_blank" rel="noopener">4</a>, <a href="https://aclanthology.org/N18-2002.pdf" title="R. Rudinger et al. “Gender Bias in Coreference Resolution”. 2018." target="_blank" rel="noopener">5</a>, <a href="https://arxiv.org/abs/2010.06032" title="K. Webster et al. Measuring and Reducing Gendered Correlations in Pre-Trained Models. 2020." target="_blank" rel="noopener">6</a>], we consider the gender bias of occupation terms in the examples. To quantify the gender bias of an occupation, we often use unambiguously gendered word-pairs (e.g. “man”-“woman”, “he”-“she”, “king”-“queen”) in our measures. It is important to keep in mind, however, that ‘gender’ is a multifaceted concept, which is much more complicated than a simple male-female dichotomy suggests [<a href="https://journals.sagepub.com/doi/abs/10.1177/0891243287001002002" title="C. West and D. H. Zimmerman. “Doing gender”. 1987" target="_blank" rel="noopener">7</a>, <a href="https://www.tandfonline.com/doi/full/10.3109/09540261.2015.1106446" title="C. Richards et al. “Non-binary or genderqueer genders”. 2016." target="_blank" rel="noopener">8</a>].</p>
+<h2 id="dataset-bias">Dataset bias</h2>
+<p>It is not a strange idea to investigate the gender bias in the training data of the LM. In the end, the model learns these biases from the data in some way or another. A typical approach to quantify the dataset bias, is to use measurable features in the dataset, such as word counts or how often gendered words co-occur with the words of interest [<a href="https://ojs.aaai.org/index.php/ICWSM/article/view/14744" title="E. Fast et al. Shirtless and dangerous: Quantifying linguistic signals of gender bias in an online fiction writing community. 2016." target="_blank" rel="noopener">10</a>, <a href="https://pile.eleuther.ai/paper.pdf" title="L. Gao et al. The Pile: An 800GB Dataset of Diverse Text for Language Modeling. 2020." target="_blank" rel="noopener">11</a>, <a href="https://proceedings.neurips.cc/paper/2019/file/201d546992726352471cfea6b0df0a48-Paper.pdf" title="Y.C. Tan et al. Assessing Social and Intersectional Biases in Contextualized Word Representations. 2019." target="_blank" rel="noopener">12</a>, <a href="https://aclanthology.org/N19-1064.pdf" title="J. Zhao et al. Gender Bias in Contextualized Word Embeddings. 2019." target="_blank" rel="noopener">13</a>]. While these statistics can give some indication of possible sources of bias, it doesn&rsquo;t tell use about more nuanced and implicit ways that gender bias can be present in texts that may still be picked up by LMs. Other researchers use special trained classifiers for showing gender bias in texts [<a href="https://dl.acm.org/doi/abs/10.1145/3287560.3287572" title="M. De-Artega et al. Bias in Bios: A Case Study of Semantic Representation Bias in a High-Stakes Setting. 2019." target="_blank" rel="noopener">14</a>, <a href="https://aclanthology.org/2020.emnlp-main.23.pdf" title="E. Dinan et al. Multi-Dimensional Gender Bias Classification. 2020." target="_blank" rel="noopener">15</a>, <a href="https://aclanthology.org/2020.emnlp-main.44.pdf" title="A. Field. Unsupervised discovery of implicit gender bias. 2020." target="_blank" rel="noopener">16</a>]. However, how these biases are learnt from texts by LMs and what features are important is still an active area of research.</p>
+<h2 id="downstream-bias">Downstream bias</h2>
+<p>Most work on the bias of LMs is focused on the output. Any bias in the predictions, recommendations, and texts generated in the downstream task has the potential to actually harm people by unfair behaviour <a href="https://aclanthology.org/2020.acl-main.485/" title="S.L. Blodgett et al. Language (technology) is power: A critical survey of \&#34;bias\&#34; in nlp. 2020." target="_blank" rel="noopener">[17]</a>. This bias is typically tested by <em>challenge sets</em>: carefully constructed sets of sentences used to probe the model for any specific biases.</p>
+<p>One example of a challenge set is the <em>semantic textual similarity task for bias</em> (<strong>STS-B</strong>) <a href="https://arxiv.org/abs/2010.06032" title="K. Webster et al. Measuring and Reducing Gendered Correlations in Pre-Trained Models. 2020." target="_blank" rel="noopener">[18]</a>. In this task, the LM is used for estimating the similarity of three sentences, containing either the word &ldquo;man&rdquo;, &ldquo;woman&rdquo;, or an occupation term. Then the gender bias for that occupation term is the difference in the similarity averaged over a set of template sentences. Below you see an example for finding the gender bias for &ldquo;janitor&rdquo; using one template sentence, where the final score is 0.75 - 0.54 = 0.21 (male bias).</p>
+<p><img src="/blog/STS-B_resized.png" alt="STS-B.png"></p>
+<h2 id="embedding-bias">Embedding bias</h2>
+<p>We have seen some examples of measuring gender bias in the training data of an LM and at its output in a downstream task. Something that is not studied as much, is the gender bias in the internal states of an LM. Because of the black-box nature of deep neural networks this is notoriously difficult.</p>
+<p>However, there is one layer in a typical LM that is actually very suitable for measuring bias: the input embeddings. The input embeddings are the first layer of the LM and encode word (parts) into word vectors, which can be used in the other layers. The input embeddings actually have a similar representation to <em>static word embeddings</em>, for which researchers have actually developed many techniques to measure gender bias. One class of bias measures relies on finding a linear <strong>gender subspace</strong>. Let us explain one of these methods from Ravfogel et al. <a href="https://aclanthology.org/2020.acl-main.647/" title="S. Ravfogel et al. “Null It Out: Guarding Protected Attributes by Iterative Nullspace Projection”. 2020." target="_blank" rel="noopener">[19]</a>.</p>
+<p>For this measure, we start with a set of unambiguously female and male words (e.g. &ldquo;man&rdquo;-&ldquo;woman&rdquo;, &ldquo;he&rdquo;-&ldquo;she&rdquo;, &ldquo;son&rdquo;-&ldquo;daughter&rdquo;) and train a linear classifier, such as a <em>support vector machine</em> (SVM), to predict the gender of each word.</p>
+<p><img src="/blog/embedding_space_decision_boundary.png" alt="embedding_space_decision_boundary.png"></p>
+<p>We then define the <strong>gender subspace</strong> as the axis orthogonal to the decision boundary of the linear SVM that is trained to predict the gender for a set of male and female words.</p>
+<p><img src="/blog/embedding_space_gender_subspace.png" alt="embedding_space_gender_subspace.png"></p>
+<p>Now we can use the gender subspace for quantifying the gender bias of, for example, occupation terms. For finding the bias score of a word in the embedding space, we use the scalar projection on the gender subspace. In the example below, words like &ldquo;engineer&rdquo; and &ldquo;scientist&rdquo; are on the &ldquo;male&rdquo; side of the subspace (to the left of the purple decision boundary), while &ldquo;nurse&rdquo; and &ldquo;receptionist&rdquo; have a female bias (to the right). The farther away from the decision boundary the word is, the higher the bias.</p>
+<p><img src="/blog/embedding_space_occupation_bias.png" alt="embedding_space_occupation_bias.png"></p>
+<p>Let us give an example of what we find if we apply this bias measure to the input embeddings of a Dutch LM called BERTje <a href="https://arxiv.org/abs/1912.09582" title="W. de Vries et al. BERTje: A Dutch BERT Model. 2019." target="_blank" rel="noopener">[20]</a>. When studying the gender bias for Dutch occupation terms, we find clear gender stereotypes in the top 5 male and female biased occupations, as can be seen in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Female bias (top 5)</th>
+<th>Male bias (top 5)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kinderopvang (child care)</td>
+<td>ingenieur (engineer)</td>
+</tr>
+<tr>
+<td>verpleegkundige (nurse)</td>
+<td>chauffeur</td>
+</tr>
+<tr>
+<td>verzorger (caretaker)</td>
+<td>kunstenaar (artist)</td>
+</tr>
+<tr>
+<td>administratie (administration)</td>
+<td>auteur (author)</td>
+</tr>
+<tr>
+<td>schoonheidsspecialist (beauty specialist)</td>
+<td>bouwvakker (construction worker)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this blog post, we wanted to give some examples of how you can measure the gender bias of a language model. We showed some methods for three different representations in the language modelling pipeline. While it is difficult to measure the gender bias in the internal states of LMs, because of their &ldquo;black box&rdquo; nature, it is actually possible to use existing bias measures on one of the layers: <em>the input embeddings</em>, for which we also give some examples.</p>
+<p>However, it is important to keep in mind that the research on how to measure bias in LMs is ongoing. Moreover, we also still need more research on how the different bias measures relate to each other to form a good understanding of the underlying mechanisms of bias and the validity of these measures.</p>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/gender-bias/">gender bias</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/blog_posts/gender-bias-in-language-models/&amp;text=How%20do%20I%20know%20whether%20my%20language%20model%20is%20gender-biased?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/blog_posts/gender-bias-in-language-models/&amp;t=How%20do%20I%20know%20whether%20my%20language%20model%20is%20gender-biased?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=How%20do%20I%20know%20whether%20my%20language%20model%20is%20gender-biased?&amp;body=/blog_posts/gender-bias-in-language-models/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/blog_posts/gender-bias-in-language-models/&amp;title=How%20do%20I%20know%20whether%20my%20language%20model%20is%20gender-biased?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=How%20do%20I%20know%20whether%20my%20language%20model%20is%20gender-biased?%20/blog_posts/gender-bias-in-language-models/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/blog_posts/gender-bias-in-language-models/&amp;title=How%20do%20I%20know%20whether%20my%20language%20model%20is%20gender-biased?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.0/mermaid.min.js" integrity="sha512-ja+hSBi4JDtjSqc4LTBsSwuBT3tdZ3oKYKd07lTVYmCnTCor56AnRql00ssqnTOR9Ss4gOP/ROGB3SfcJnZkeg==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.d9d80f811e95b4b4f6df1eaaf297b05f.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
