@@ -5,12 +5,80 @@
     <link>/tag/gender-bias/</link>
       <atom:link href="/tag/gender-bias/index.xml" rel="self" type="application/rss+xml" />
     <description>gender bias</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 03 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/logo_hu284f5771a1ea0c89898faa204948e4a1_285145_300x300_fit_lanczos_2.png</url>
       <title>gender bias</title>
       <link>/tag/gender-bias/</link>
     </image>
+    
+    <item>
+      <title>The difficult problem of understanding the relation between bias in language models and human biases</title>
+      <link>/blogs_posts/understanding-relation-language-model-and-human-bias/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/blogs_posts/understanding-relation-language-model-and-human-bias/</guid>
+      <description>&lt;p&gt;Artificial Intelligence (AI) is a technology that is here to stay.
+In many aspects of daily life, one interacts with AI algorithms in one way or another. These algorithms range from search engines like Google, that &lt;a href=&#34;https://www.google.nl/search?q=restaurant&amp;#43;close&amp;#43;to&amp;#43;me&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;present search results in a way that hopefully is optimal to you&lt;/a&gt;, to health apps that aim to &lt;a href=&#34;https://link.springer.com/article/10.1007/s10916-021-01773-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;support your healthy living habits&lt;/a&gt;.
+Because of your omnipresent interactions with AI, it is important to understand how AI systems make decisions. This is especially true, since we need to be able to trust those decisions to be fair and &lt;a href=&#34;https://www.google.com/search?q=nurse&amp;amp;sxsrf=APq-WBu4y8ISKSVyYfHlpCP9Y_7U2MYpGA:1643629501211&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ved=2ahUKEwiM_76E9dv1AhXL-6QKHVsoCwsQ_AUoAXoECAEQAw&amp;amp;biw=1536&amp;amp;bih=754&amp;amp;dpr=1.25&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;unbiased&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A clear case where there is a danger for unfairness and bias in AI
+systems is in the use of large language models. Roughly, these models
+aim to capture the meaning of natural language expressions; They are
+used in many domains, including automatic translation, speech
+recognition, and chat bots. Obviously, it is crucial that these models
+get the meaning right, and do not introduce unfair biases in the meaning
+of a phrase!&lt;/p&gt;
+&lt;p&gt;What makes a bias unfair? The way that most language models express the
+meaning of the word &amp;ldquo;nurse&amp;rdquo; is highly associated with the way feminine
+terms (woman, girl, she, etc) are expressed. This does not seem to be
+what we want, since a male nurse has the same job characteristics as a
+female nurse. However, this bias, and similar gender biases related to
+professions, does express the &lt;a href=&#34;https://en.wikipedia.org/wiki/Gender_gap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gender
+gap&lt;/a&gt;. In fact, the size of the
+gender gap in terms of labor statistics over the years &lt;a href=&#34;https://www.pnas.org/content/115/16/E3635&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;has been shown
+to predict&lt;/a&gt; the bias in
+language over the years. Even stronger, implicit biases that humans seem
+to have about (among other things) gender, &lt;a href=&#34;https://doi.org/10.1126/science.aal4230&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;are reflected in language
+models&lt;/a&gt; as well. It seems thus
+that to some extent language models reflect societal trends, and nothing
+else. Should we hold these AI algorithms to a higher standard than we do
+humans? Or should we strive to eradicate bias from language, and
+consequently from human vocabulary and thought? To answer these
+questions, an understanding of human bias is necessary as well.&lt;/p&gt;
+&lt;p&gt;Understanding human biases comes with its own set of problems. Some
+people may be more biased than others, but how do we &lt;a href=&#34;https://econtent.hogrefe.com/doi/abs/10.1027/1015-5759.24.4.210&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;measure such a
+difference&lt;/a&gt;?
+First, it is important to realize that the question implies a golden
+standard. There could be people out there that are completely unbiased!
+But what would their behavior and decisions look like? This is a
+normative question, that society has to address. Second, in order to
+measure a difference, there need to be good measurement tools. Contrary
+to many physical properties such as length or weight, there is &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S074756321100094X&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;no
+precise measurement
+tool&lt;/a&gt;
+for human bias.&lt;/p&gt;
+&lt;p&gt;One of the reasons may be that human biases and attitudes are inherently
+personal, and it is extremely difficult to develop tests that allow for
+the heterogeneity of biases that are induced by images, words, or names.
+For example, we are currently running a study to show that biases that
+have been reported in past
+&lt;a href=&#34;https://implicit.harvard.edu/implicit/takeatest.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;studies&lt;/a&gt; (e.g.,
+towards women) may depend on the use of specific words (as in the image
+below), rather than show an implicit bias towards women per se.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/blog/Gender-Career_IAT.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;In the Gender-Career Implicit Association Test, people have to press a
+right or a left button in response to either gender names or two
+supposedly gender-stereotypical categories (Career and Family). The idea
+is that this is harder when there is a &amp;ldquo;mismatch&amp;rdquo; between the category
+and the gender that require the same button press.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is the challenge our research group stands for: To understand how
+bias in large language models relates to bias in humans. We thus need to
+address fundamental questions about the nature and measurement of such
+biases. A daunting challenge for sure, but the end goal is extremely
+worthwhile: To mitigate unfair biases in the AI systems we interact with
+on a daily basis, such that we can gain trust in their decisions, and
+fairness is achieved.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How do I know if my language model is gender-biased?</title>

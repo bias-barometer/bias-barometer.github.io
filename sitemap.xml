@@ -4,26 +4,31 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/blogs_posts/</loc>
-    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/gender-bias/</loc>
-    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blogs_posts/gender-bias-in-language-models/</loc>
-    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blogs_posts/understanding-relation-language-model-and-human-bias/</loc>
+    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blogs_posts/gender-bias-in-language-models/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
   </url>
   
